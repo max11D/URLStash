@@ -45,6 +45,10 @@ a.stash-url:hover {
   
 }
 
+#social-links {
+  margin: 1.5em 0;
+}
+
 .social-icon {
   padding: 24px;
   font-size: 0px;
