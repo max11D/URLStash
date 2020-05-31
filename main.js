@@ -41,7 +41,7 @@ function setHead(config) {
 function createLinkNode(data) {
   var container = document.createElement("a");
   container.href = data.destination;
-  container.target = data.target;
+  container.target = data.target || "";
   container.classList.add("stash-url")
   
   var par = document.createElement("p");
