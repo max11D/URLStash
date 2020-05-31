@@ -17,6 +17,13 @@ var config = {
       htmlTitle: true,
       destination: "https://nothingismissing.home.blog/"
     }
+  ],
+  socialLinks: [
+    ["instagram", "https://instagram.com/queenscollege.cds"],
+    ["facebook", "https://facebook.com/queenscollege.cds"],
+    ["twitter", "https://twitter.com/QC_CDS"],
+    ["tumblr", "https://blog.qc-cds.org"],
+    ["linkedin", "https://www.linkedin.com/company/committee-for-disabled-students-of-queens-college/"]
   ]
 }
 
@@ -66,7 +73,25 @@ function createLinkNode(data) {
   document.getElementById("link-list").appendChild(container);
 }
 
+function createSocialLinks(data) {
+  var s = document.getElementById("social-links");
+  
+  data.forEach(function(data) {
+    var a = document.createElement("a");
+    a.classList.add("social-icon");
+    a.classList.add(data[0].toLowerCase());
+    a.href = data[1];
+    a.target = data[0];
+    a.innerText = " ";
+    a.setAttribute("aria-label", data[0])
+    s.appendChild(a);
+  });
+}
+
 setHead(config);
+
 config.links.forEach(function(data) {
   createLinkNode(data);
-})
+});
+
+createSocialLinks(config.socialLinks)
