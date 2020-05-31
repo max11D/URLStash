@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  background-color: #444;
+  font-family: sans-serif;
+}
+
+#head {
+  color: white;
+  margin-bottom: 2.5em;
+}
+
+#logo {
+  max-height: 10em;
+  border-radius:50%
+}
+
+#link-list {
+  width: 90%;
+  max-width: 40em;
+  margin: auto;
+}
+
+.stash-url {
+  border: 2px solid white;
+  background-color: white;
+  display: block;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+a.stash-url {
+  text-decoration: none;
+  color: black;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0.66em 0;
+}
+
+a.stash-url:hover {
+  background-color: transparent;
+  color: white;
+  
+}
+
+@media (max-width: 550px) {
+  #link-list, #head {
+    font-size: 66%;
+  }
+}
