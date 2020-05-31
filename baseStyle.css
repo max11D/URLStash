@@ -45,6 +45,59 @@ a.stash-url:hover {
   
 }
 
+
+.social-icon {
+  padding: 16px;
+  font-size: 0px;
+  margin: 0 4px;
+  border: 2px solid white;
+  border-radius:50%;
+  background-image: url('https://links.qc-cds.org/social-icons-w.png');
+  background-size: 500%;
+}
+
+.social-icon.behance {}
+
+.social-icon.email {
+  background-position: 25% 0%;
+}
+
+.social-icon.instagram {
+  background-position: 50% 0%;
+}
+
+.social-icon.linkedin {
+  background-position: 75% 0%;
+}
+
+.social-icon.facebook {
+  background-position: 100% 0%;
+}
+
+.social-icon.youtube {
+  background-position: 0% 25%;
+}
+
+.social-icon.vimeo {
+  background-position: 25% 25%;
+}
+
+.social-icon.twitter {
+  background-position: 50% 25%;
+}
+
+.social-icon.wordpress {
+  background-position: 75% 25%;
+}
+
+.social-icon.tumblr {
+  background-position: 100% 25%;
+}
+
+.social-icon.website {
+  background-position: 0% 50%;
+}
+
 @media (max-width: 550px) {
   #link-list, #head {
     font-size: 66%;
