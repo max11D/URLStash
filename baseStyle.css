@@ -45,15 +45,15 @@ a.stash-url:hover {
   
 }
 
-
 .social-icon {
-  padding: 16px;
+  padding: 24px;
   font-size: 0px;
   margin: 0 4px;
   border: 2px solid white;
   border-radius:50%;
   background-image: url('https://links.qc-cds.org/social-icons-w.png');
   background-size: 500%;
+  display: inline-block;
 }
 
 .social-icon.behance {}
